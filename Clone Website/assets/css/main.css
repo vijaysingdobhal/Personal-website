@@ -147,9 +147,10 @@ h6 {
   --heading-color: #ffffff;
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
+  height: 70px; /* Adjust the height as needed */
+  padding: 10px 20px; /* Reduce padding to make it smaller */
 }
 
 .header .logo {
@@ -157,8 +158,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 32px;
-  margin-right: 8px;
+  max-height: 120px;
+  margin-right: 13px;
 }
 
 .header .logo h1 {
@@ -1655,6 +1656,8 @@ section,
 # Team Section
 --------------------------------------------------------------*/
 .team .team-member {
+  justify-content: center;
+  align-items: center;
   background-color: var(--surface-color);
   overflow: hidden;
   border-radius: 5px;
@@ -1663,8 +1666,10 @@ section,
 }
 
 .team .team-member .member-img {
+  justify-content: center;
   position: relative;
   overflow: hidden;
+  
 }
 
 .team .team-member .social {
@@ -1721,6 +1726,17 @@ section,
   opacity: 1;
   bottom: 15px;
 }
+.team-container .row {
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center team members horizontally */
+  gap: 20px; /* Optional: Add spacing between team members */
+}
+.team-container .row {
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center team members horizontally */
+  gap: 20px; /* Optional: Add spacing between team members */
+}
+
 
 /*--------------------------------------------------------------
 # Contact Section
